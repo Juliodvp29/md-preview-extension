@@ -1,0 +1,47 @@
+{
+  "name": "md-preview-extension",
+  "displayName": "md-preview-extension",
+  "description": "Markdown preview rendered like GitHub, side by side with your editor",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+ "contributes": {
+  "commands": [
+    {
+      "command": "md-preview-extension.openPreview",
+      "title": "Abrir Preview Markdown"
+    }
+  ],
+  "keybindings": [
+  {
+    "command": "md-preview-extension.openPreview",
+    "key": "ctrl+shift+m",
+    "when": "editorLangId == markdown"
+  }
+]
+},
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.110.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript-eslint": "^8.56.1",
+    "eslint": "^9.39.3",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
