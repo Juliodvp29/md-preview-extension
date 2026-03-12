@@ -36,9 +36,7 @@ The preview panel will open to the right automatically.
 
 ## 📸 Preview
 
-> _(Add a screenshot or GIF here showing the side-by-side view)_
->
-> Tip: Use [ScreenToGif](/images/Animation.gif) to record a GIF of the live preview in action.
+[ScreenToGif](/images/Animation.gif)
 
 ---
 
