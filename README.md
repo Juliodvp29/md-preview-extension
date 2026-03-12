@@ -36,7 +36,7 @@ The preview panel will open to the right automatically.
 
 ## 📸 Preview
 
-[ScreenToGif](/images/Animation.gif)
+![ScreenToGif](/images/Animation.gif)
 
 ---
 
